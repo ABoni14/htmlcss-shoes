@@ -36,6 +36,15 @@ header{
 /* HEADER */
 header ul li{
   display: inline-block;
+  
+}
+
+header ul li a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  line-height: 30px;
   width: 30px;
   height: 30px;
   background-color: #fff;
@@ -44,13 +53,6 @@ header ul li{
   text-align: center;
   margin-right: 20px;
   margin-top: 20px;
-}
-
-header ul li a{
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  line-height: 30px;
 }
 
 /* MAIN */
@@ -77,7 +79,7 @@ main .block{
 }
 
 .position-text{
-  font-size: 50px;
+  font-size: 3vw;
   text-transform: uppercase;
 }
 
