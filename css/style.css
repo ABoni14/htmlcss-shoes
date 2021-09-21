@@ -1,7 +1,17 @@
+/***** GLOBAL *****/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+} 
+
+
+body{
+  font-family: 'Rubik Mono One', sans-serif;
 }
 
 header{
@@ -9,12 +19,21 @@ header{
   width: 100%;
   display: inline-block;
   position: fixed;
-  background-color:beige;
   z-index: 99;
   text-align: right;
 
 }
 
+.contain{
+  width: 50%;
+  position: absolute; 
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* HEADER */
 header ul li{
   display: inline-block;
   width: 30px;
@@ -34,13 +53,14 @@ header ul li a{
   line-height: 30px;
 }
 
+/* MAIN */
 main .block{
   height: 100vh;
   position: relative;
 }
 
 .block.red-block{
-  background-color: red;
+  background-color: #f80204;
 }
 
 .block.green-block{
@@ -51,7 +71,22 @@ main .block{
   background-color: yellow;
 }
 
-.contain .position-img{
-  position: absolute;
+/* CONTAIN */
+.position-img{
+  width: 100%;
 }
+
+.position-text{
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.yellow-text{
+  color: yellow;
+}
+
+.green-text{
+  color: green;
+}
+
 
